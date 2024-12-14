@@ -29,26 +29,26 @@ body {
     background-color: var(---cor-begeclaroacinzentado);
 }
 
-main {
-    padding: 10px;
-}
-
-h1 {
-    font-family: var(---fonte-letreiro);
-    font-size: 40pt;
-    letter-spacing: 3px;
-    text-shadow: 1.5px 1.5px 3px black;
-}
-
 header {
     background-color: var(---cor-marromescuro);
     color: var(---cor-begeclaro);
     padding: 5px;
 }
 
-header > p {
+header h1 {
+    font-family: var(---fonte-letreiro);
+    font-size: 40pt;
+    letter-spacing: 3px;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
+header p {
     font: normal 10pt var(---fonte-olho);
     font-weight: bold;
+}
+
+main {
+    padding: 10px;
 }
 
 section#carrosel {
@@ -73,4 +73,21 @@ article img {
 div {
     width: 80%;
     padding: 5px;
+}
+
+section#info {
+    padding: 5px 15px;
+    text-align: start;
+}
+
+section#info p {
+    font: normal 10pt var(---fonte-padrao);
+}
+
+section#info h1 {
+    font: bold 20pt var(---fonte-padrao);
+}
+
+section#info #valor {
+    font: bold 15pt var(---fonte-padrao)
 }
