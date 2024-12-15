@@ -8,12 +8,12 @@
     ---fonte-olho: "Funnel Display", cursive;
     ---fonte-letreiro: "Cookie", cursive;
 
-    ---cor-ceramicarosada:#bb7763;
-    ---cor-begeclaro:#e1d3bd;
-    ---cor-marromescuro:#6f4432;
-    ---cor-marromamarelado:#967558;
-    ---cor-begeclaroacinzentado:#d5c6ae;
-    ---cor-marrombemescuro:#3e2c20;
+    ---cor-ceramicarosada: #bb7763;
+    ---cor-begeclaro: #e1d3bd;
+    ---cor-marromescuro: #6f4432;
+    ---cor-marromamarelado: #967558;
+    ---cor-begeclaroacinzentado: #d5c6ae;
+    ---cor-marrombemescuro: #3e2c20;
 }
 
 * {
@@ -59,11 +59,11 @@ section#carrosel {
 
 article {
     width: 15%;
-    padding: 5px;  
+    padding: 5px;
 }
 
 div {
-    width: 80%;
+    width: 85%;
     padding: 5px;
 }
 
@@ -97,12 +97,12 @@ section#info #valor {
     font: bold 15pt var(---fonte-padrao)
 }
 
-div#wpp{
+div#wpp {
     width: fit-content;
     margin-top: 15px;
     align-items: center;
     border-radius: 10px;
-    background-color: var(---cor-marromescuro); 
+    background-color: var(---cor-marromescuro);
 }
 
 div#wpp a {
@@ -120,4 +120,33 @@ div#wpp p {
     padding-right: 2px;
     font: bold 10pt var(---fonte-padrao);
     color: var(---cor-begeclaroacinzentado);
+}
+
+@media (min-width: 1024px) {
+
+    header p {
+        font-size: 15pt;
+    }
+
+    header h1 {
+        font-size: 70pt;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #carrosel {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    li {
+        list-style-type:lower-alpha;
+    }
 }

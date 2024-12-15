@@ -35,19 +35,20 @@ main {
 
 h1 {
     font-family: var(---fonte-letreiro);
-    font-size: 40pt;
+    padding: 10px;
+    font-size: 50pt;
     letter-spacing: 3px;
-    text-shadow: 1.5px 1.5px 3px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 header {
     background-color: var(---cor-marromescuro);
     color: var(---cor-begeclaro);
-    padding: 5px;
+    padding: 10px;
 }
 
-header > p {
-    font: normal 10pt var(---fonte-olho);
+header p {
+    font: normal 12pt var(---fonte-olho);
     font-weight: bold;
 }
 
@@ -80,4 +81,35 @@ img {
 li p {
     height: 26px;
     overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+
+    header p {
+        font-size: 15pt;
+    }
+    
+    h1 {
+        font-size: 70pt;
+        text-shadow: 3px 3px 3px black;
+    }
+    
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    ul {
+        gap: 5px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    li p {
+        font-size: 14px;
+        min-height: 40px;
+        overflow: visible;
+    }
 }
