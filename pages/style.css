@@ -96,3 +96,28 @@ section#info h1 {
 section#info #valor {
     font: bold 15pt var(---fonte-padrao)
 }
+
+div#wpp{
+    width: fit-content;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(---cor-marromescuro); 
+}
+
+div#wpp a {
+    display: inline-flex;
+    text-decoration: none;
+    gap: 5px;
+}
+
+
+div#wpp img {
+    max-width: 20px;
+}
+
+div#wpp p {
+    padding: 0px 0px;
+    font: bold 10pt var(---fonte-padrao);
+    color: var(---cor-begeclaroacinzentado);
+}
