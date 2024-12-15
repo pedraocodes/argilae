@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivitelino / Argilaê - Cerâmicas by Tainã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Argilaê</h1>
+        <p>Cerâmicas by Tainã</p>
+    </header>
+    <main>
+       <section id="carrosel">
+           <article>
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/colares1.jpeg" alt="Colar trivitelino único">
+            <img onclick="mostrar2()" src="../fotos-redimensionadas/colares2.jpeg" alt="Colar trivitelino único">
+            <img onclick="mostrar3()" src="../fotos-redimensionadas/colares11.jpeg" alt="Colar trivitelino único">
+           </article>
+           <div>
+            <img id="img-res" src="../fotos-originais/colares2.jpeg" alt="Colar azul de pedras gemeas - foto original">
+           </div>
+           <script>
+            let res = document.querySelector('img#img-res')
+            function mostrar1() {
+                res.setAttribute('src', '../fotos-originais/colares1.jpeg')
+            }
+
+            function mostrar2() {
+                res.setAttribute('src', '../fotos-originais/colares2.jpeg')
+            }
+
+            function mostrar3() {
+                res.setAttribute('src', '../fotos-originais/colares11.jpeg')
+            }
+
+           </script>
+       </section>
+       <section id="info">
+        <h1>Trivitelino</h1>
+        <ul>
+            <li><p>Colar de corrente com pingente único na forma de geodo, feito em cerâmica. Pingente colorido em azul água e vernizado.</p></li><br>
+            <li><p>Colar de corrente com pingente único na forma de coração, feito em cerâmica. Pingente colorido em vermelho e vernizado.</p></li><br>
+            <li><p>Colar de cordão com pingente único na forma de placa, feito em cerâmica. Pingente colorido em azul água e vernizado.</p></li><br>
+        </ul>
+        <p id="valor">0,00 R$ cada um.</p>
+       </section>
+    </main>
+</body>
+
+</html>

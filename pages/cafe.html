@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café / Argilaê - Cerâmicas by Tainã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Argilaê</h1>
+        <p>Cerâmicas by Tainã</p>
+    </header>
+    <main>
+       <section id="carrosel">
+           <article>
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/pingente-xícara2.jpeg" alt="Colar de elos">
+            <img onclick="mostrar2()" src="../fotos-redimensionadas/pingente-xícara.jpeg" alt="Colar de elos em corrente">
+           </article>
+           <div>
+            <img id="img-res" src="../fotos-originais/pingente-xícara2.jpeg" alt="Colar azul de pedras gemeas - foto original">
+           </div>
+           <script>
+
+            let res = document.querySelector('img#img-res')
+            function mostrar1() {
+                res.setAttribute('src', '../fotos-originais/pingente-xícara2.jpeg')
+            }
+
+            function mostrar2() {
+                res.setAttribute('src', '../fotos-originais/pingente-xícara.jpeg')
+            }
+
+           </script>
+       </section>
+       <section id="info">
+        <h1>Café</h1>
+        <p>Pingente em forma de xícara rústica com detalhe em cerâmica. Pintado em marrom e vernizado</p>
+        <p id="valor">0,00 R$</p>
+       </section>
+    </main>
+</body>
+
+</html>
