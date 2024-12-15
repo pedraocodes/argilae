@@ -117,7 +117,7 @@ div#wpp img {
 }
 
 div#wpp p {
-    padding: 0px 0px;
+    padding-right: 2px;
     font: bold 10pt var(---fonte-padrao);
     color: var(---cor-begeclaroacinzentado);
 }
