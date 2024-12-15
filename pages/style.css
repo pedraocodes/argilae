@@ -32,12 +32,13 @@ body {
 header {
     background-color: var(---cor-marromescuro);
     color: var(---cor-begeclaro);
-    padding: 5px;
+    padding: 10px;
 }
 
 header h1 {
     font-family: var(---fonte-letreiro);
     font-size: 40pt;
+    padding: 10px;
     letter-spacing: 3px;
     text-shadow: 1.5px 1.5px 3px black;
 }
