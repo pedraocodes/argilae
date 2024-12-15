@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuia / Argilaê - Cerâmicas by Tainã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Argilaê</h1>
+        <p>Cerâmicas by Tainã</p>
+    </header>
+    <main>
+       <section id="carrosel">
+           <article>
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/prato-azul.jpeg" alt="Prato azul">
+            <img onclick="mostrar2()" src="../fotos-redimensionadas/prato-azul2.jpeg" alt="Prato azul">
+            <img onclick="mostrar3()" src="../fotos-redimensionadas/prato-azul3.jpeg" alt="Prato azul">
+           </article>
+           <div>
+            <img id="img-res" src="../fotos-originais/prato-azul.jpeg" alt="Prato azul, foto original">
+           </div>
+           <script>
+            let res = document.querySelector('img#img-res')
+            function mostrar1() {
+                res.setAttribute('src', '../fotos-originais/prato-azul.jpeg')
+            }
+
+            function mostrar2() {
+                res.setAttribute('src', '../fotos-originais/prato-azul2.jpeg')
+            }
+
+            function mostrar3() {
+                res.setAttribute('src', '../fotos-originais/prato-azul3.jpeg')
+            }
+
+           </script>
+       </section>
+       <section id="info">
+        <h1>Cuia</h1>
+        <p>Peça de cerâmica em formato de prato, cuia ou fruteira. Colorido em azul, com detalhe em cerâmica e vernizado.</p>
+        <p id="valor">0,00 R$</p>
+       </section>
+    </main>
+</body>
+
+</html>

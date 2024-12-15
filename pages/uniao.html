@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>União / Argilaê - Cerâmicas by Tainã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Argilaê</h1>
+        <p>Cerâmicas by Tainã</p>
+    </header>
+    <main>
+       <section id="carrosel">
+           <article>
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/colar-e-verde.jpeg" alt="Colar em e">
+           </article>
+           <div>
+            <img id="img-res" src="../fotos-originais/colar-e-verde.jpeg" alt="Colar em e, foto original">
+           </div>
+           <script>
+            let res = document.querySelector('img#img-res')
+            function mostrar1() {
+                res.setAttribute('src', '../fotos-originais/colar-e-verde.jpeg')
+            }
+
+           </script>
+       </section>
+       <section id="info">
+        <h1>União</h1>
+        <p>Colar de cordão, com pingente único no formato de e, feito em cerêmica. Colorido em verde musgo e vernizado.</p>
+        <p id="valor">0,00 R$</p>
+       </section>
+    </main>
+</body>
+
+</html>
