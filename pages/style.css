@@ -53,12 +53,8 @@ main {
 
 section#carrosel {
     display: flex;
-    width:fit-content;
+    width: fit-content;
     background-color: white;
-}
-
-img {
-    width: 100%;
 }
 
 article {
@@ -66,13 +62,22 @@ article {
     padding: 5px;  
 }
 
-article img {
-    padding-bottom: 10px;
-}
-
 div {
     width: 80%;
     padding: 5px;
+}
+
+article img {
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+article img:hover {
+    border: 2px solid var(---cor-marromescuro);
+}
+
+img {
+    width: 100%;
 }
 
 section#info {

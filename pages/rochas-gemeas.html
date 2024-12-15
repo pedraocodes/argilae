@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivitelino / Argilaê - Cerâmicas by Tainã</title>
+    <title>Rochas Gêmeas / Argilaê - Cerâmicas by Tainã</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,17 +15,24 @@
     <main>
        <section id="carrosel">
            <article>
-            <img src="../fotos-redimensionadas/colar-azul-gemeos.jpeg" alt="Colar azul gêmeos">
-            <img src="../fotos-redimensionadas/colar-3elos.jpeg" alt="">
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/colar-azul-gemeos.jpeg" alt="Colar azul gêmeos">
            </article>
            <div>
-            <img src="../fotos-originais/colar-azul-gemeos.jpeg" alt="Colar azul gêmeos em alta resolução">
+            <img id="img-res" src="../fotos-originais/colar-azul-gemeos.jpeg" alt="Colar azul de pedras gemeas - foto original">
            </div>
+           <script>
+
+            function mostrar1() {
+                let res = document.querySelector('img#img-res')
+                res.setAttribute('src', '../fotos-originais/colar-azul-gemeos.jpeg')
+            }
+
+           </script>
        </section>
        <section id="info">
         <h1>Rochas Gêmeas</h1>
         <p>Colar de corrente, com dois pingentes feitos em cerâmica. Pingentes são pintados em azul e vernizados.</p>
-        <p id="valor">XX,XX R$</p>
+        <p id="valor">0,00 R$</p>
        </section>
     </main>
 </body>

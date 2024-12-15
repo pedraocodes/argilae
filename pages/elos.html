@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elos / Argilaê - Cerâmicas by Tainã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Argilaê</h1>
+        <p>Cerâmicas by Tainã</p>
+    </header>
+    <main>
+       <section id="carrosel">
+           <article>
+            <img onclick="mostrar1()" src="../fotos-redimensionadas/colar-3elos.jpeg" alt="Colar de elos">
+            <img onclick="mostrar2()" src="../fotos-redimensionadas/colar-3elos-corrente.jpeg" alt="Colar de elos em corrente">
+            <img onclick="mostrar3()" src="../fotos-redimensionadas/colar-3elos-corrente2.jpeg" alt="Colar de elos em corrente">
+            <img onclick="mostrar4()" src="../fotos-redimensionadas/colar-3elos-corrente-i.jpeg" alt="Colar de elos em I">
+           </article>
+           <div>
+            <img id="img-res" src="../fotos-originais/colar-elos.jpeg" alt="Colar azul de pedras gemeas - foto original">
+           </div>
+           <script>
+            let res = document.querySelector('img#img-res')
+            function mostrar1() {
+                res.setAttribute('src', '../fotos-originais/colar-elos.jpeg')
+            }
+
+            function mostrar2() {
+                res.setAttribute('src', '../fotos-originais/colar-elos-corrente.jpeg')
+            }
+
+            function mostrar3() {
+                res.setAttribute('src', '../fotos-originais/colar-elos-corrente2.jpeg')
+            }
+
+            function mostrar4() {
+                res.setAttribute('src', '../fotos-originais/colar-elos-corrente-i.jpeg')
+            }
+
+           </script>
+       </section>
+       <section id="info">
+        <h1>Elos</h1>
+        <p>Colar de cordão, com três pingentes no formato de elo, feitos em cerâmica. Pingentes com detalhe de rocha são pintados em marrom e vernizados.</p>
+        <p id="valor">0,00 R$</p>
+       </section>
+    </main>
+</body>
+
+</html>
