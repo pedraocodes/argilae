@@ -43,9 +43,9 @@ main {
 h1 {
     font-family: var(---fonte-letreiro);
     padding: 5px;
-    font-size: 40pt;
+    font-size: 25pt;
     letter-spacing: 3px;
-    line-height: 45px;
+    line-height: 25px;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -101,6 +101,10 @@ li p {
     main {
         max-width: 800px;
         margin: auto;
+    }
+
+    h1 {
+        font-size: 40pt;
     }
 
     ul {

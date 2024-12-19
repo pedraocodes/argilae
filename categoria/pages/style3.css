@@ -45,10 +45,10 @@ header {
 header h1 {
     padding: 5px;
     font-family: var(---fonte-letreiro);
-    font-size: 40pt;
+    font-size: 25pt;
     text-shadow: 2px 2px 3px black;
     letter-spacing: 3px;
-    line-height: 45px;
+    line-height: 25px;
 }
 
 header p {
@@ -132,6 +132,10 @@ div#wpp p {
 }
 
 @media (min-width: 1024px) {
+
+    header h1 {
+        font-size: 40pt;
+    }
 
     header p {
         font-size: 15pt;
