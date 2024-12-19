@@ -42,9 +42,10 @@ main {
 
 h1 {
     font-family: var(---fonte-letreiro);
-    padding: 10px;
-    font-size: 50pt;
+    padding: 5px;
+    font-size: 40pt;
     letter-spacing: 3px;
+    line-height: 45px;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -95,11 +96,7 @@ li p {
     header p {
         font-size: 15pt;
     }
-    
-    h1 {
-        font-size: 70pt;
-        text-shadow: 3px 3px 3px black;
-    }
+
     
     main {
         max-width: 800px;
